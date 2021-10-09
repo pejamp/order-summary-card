@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  max-width: 1440px;
+  font: 16px "Red Hat Display", sans-serif;
+  background: url("./images/pattern-background-desktop.svg") no-repeat
+    var(--pale-blue);
+}
+
+.component {
+  width: 480px;
+  margin: 112px auto;
+  background: var(--very-pale-blue);
+  border-radius: 20px;
+}
+
+.hero {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+}
