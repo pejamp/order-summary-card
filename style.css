@@ -36,3 +36,60 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.summary {
+  text-align: center;
+}
+.summary h1 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+.summary p {
+  line-height: 1.5rem;
+  padding: 0 20px;
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.plan {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+.plan > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.price > p {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+.price p:last-child {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+.plan a {
+  color: var(--bright-blue);
+  font-weight: 700;
+}
