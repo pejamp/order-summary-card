@@ -21,20 +21,22 @@ body {
 }
 
 .component {
-  width: 480px;
+  width: 440px;
   margin: 112px auto;
   background: var(--very-pale-blue);
   border-radius: 20px;
+  box-shadow: 0 10px 50px rgb(216, 216, 216);
 }
 
 .hero {
-  border-radius: 20px 20px 0 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   overflow: hidden;
 }
 
 .hero img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .content {
@@ -64,12 +66,12 @@ body {
 
 .plan {
   width: 100%;
-  padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  margin-bottom: 40px;
+  padding: 0 25px;
+  margin-bottom: 50px;
 }
 .plan > div {
   display: flex;
@@ -92,4 +94,29 @@ body {
 .plan a {
   color: var(--bright-blue);
   font-weight: 700;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.buttons button:first-child {
+  padding: 15px 0;
+  border-radius: 10px;
+  border: none;
+  background: var(--bright-blue);
+  color: var(--very-pale-blue);
+  font-weight: 900;
+  cursor: pointer;
+  margin-bottom: 30px;
+  line-height: 20px;
+  box-shadow: 0 10px 10px rgb(216, 216, 216);
+}
+.buttons button:last-child {
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: var(--desaturated-blue);
+  font-weight: 900;
 }
