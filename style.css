@@ -111,7 +111,11 @@ body {
   cursor: pointer;
   margin-bottom: 30px;
   line-height: 20px;
-  box-shadow: 0 10px 10px rgb(216, 216, 216);
+
+  transition: filter 0.2s;
+}
+.buttons button:first-child:hover {
+  filter: brightness(1.8);
 }
 .buttons button:last-child {
   border: none;
@@ -119,4 +123,58 @@ body {
   background: none;
   color: var(--desaturated-blue);
   font-weight: 900;
+
+  transition: filter 0.2s;
+}
+.buttons button:last-child:hover {
+  filter: brightness(0.7);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  margin: 16px 0;
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url("./images/pattern-background-mobile.svg") no-repeat
+      var(--pale-blue);
+  }
+
+  .component {
+    max-width: 320px;
+    margin: 72px auto;
+  }
+
+  .content {
+    padding: 24px;
+  }
+
+  .summary h1 {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+  .summary p {
+    padding: 0 4px;
+  }
+
+  .plan {
+    padding: 0 4px;
+    margin-bottom: 38px;
+  }
+
+  .buttons button:first-child {
+    margin-bottom: 24px;
+  }
+  .buttons button:last-child {
+    margin-bottom: 8px;
+  }
+
+  .attribution {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
 }
